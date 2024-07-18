@@ -1,0 +1,13 @@
+let defaultMaxlength = 10;
+let defaultName = "nnnameeeesdvvcdfffddf";
+
+console.log(defaultName);
+
+function name_short(name = defaultName, maxlength = defaultMaxlength) {
+    if (name.length > maxlength) {
+        return name.substring(0, maxlength) + "...";
+    }
+    return name;
+}
+
+console.log(name_short());
